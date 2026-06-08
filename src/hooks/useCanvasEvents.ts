@@ -35,11 +35,10 @@ export function useCanvasEvents({
       if (!canvas) return null;
 
       const rect = canvas.getBoundingClientRect();
-      const scaleX = canvas.width / rect.width;
-      const scaleY = canvas.height / rect.height;
-
-      const px = (clientX - rect.left) * scaleX;
-      const py = (clientY - rect.top) * scaleY;
+      // 使用 CSS 像素偏移量，而非乘以 DPR
+      // 因为绘制时已通过 ctx.setTransform(dpr, ...) 将坐标系映射到 CSS 像素空间
+      const px = clientX - rect.left;
+      const py = clientY - rect.top;
 
       return pixelToHex(px, py, hexSize, centerX, centerY);
     },
