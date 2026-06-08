@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: '/HexFlip/',
+  build: {
+    outDir: 'docs',
+  },
   plugins: [react()],
   server: {
     port: 3000,

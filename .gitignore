@@ -1,8 +1,10 @@
 # Dependencies
 node_modules/
 
-# Build output
+# Build output (local only)
 dist/
+# GitHub Pages deploy folder
+# docs/ is intentionally tracked for GitHub Pages deployment
 
 # Vite
 .vite/
