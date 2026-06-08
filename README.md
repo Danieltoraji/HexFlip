@@ -12,11 +12,11 @@
 # 安装依赖
 npm install
 
-# 启动开发服务器
-npm start
-
 # 生产构建
 npm run build
+
+# 启动开发服务器
+npm start
 ```
 
 打开 `http://localhost:3000`。
