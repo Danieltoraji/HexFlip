@@ -8,6 +8,8 @@
 
 ## 🚀 快速开始
 
+https://danieltoraji.github.io/HexFlip/
+
 ```bash
 # 安装依赖
 npm install
